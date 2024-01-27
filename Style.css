@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+/*khung chứa danh sách sản phẩm*/
+#content_sp {
+		box-sizing: content-box;
+		width:600px; /* để đặt vào nội dung giữa khung của trang chủ */
+		height:auto; /*tự động co giẫn theo nội dung (sản phẩm) bên trong*/
+		overflow:auto; /*xử lý lỗi khung không co dãn khi .sanpham sử dụng float:left*/
+		border:1px green solid;
+		margin-left:auto; margin-right:auto;/*cho khung căn giữa màn hình*/
+		
+		}
+/*khung của 1 sản phẩm*/
+.sanpham {
+			box-sizing:border-box;/*để kích thước không cộng padding,border*/
+			width:190px;/*1 dòng hiển thị 3 sản phẩm, rộng = 190 * margin_left + margin_right=200px*/
+			height:300px;
+			margin:5px; 
+			border:1px red dashed; /*đường viền*/
+			border-radius:10px ; /*bo tròn 4 cạnh*/
+			padding:5px;
+			float:left;/*làm cho thẻ div nằm theo hàng ngang trái -> phải*/
+		 } 
+.sanpham:hover {
+		background-color:#CCC;
+		border:1px red solid;/*gộp 3 giá trị vào 1 thuộc tính chung*/
+	}
+	
+.sanpham h3 {color:green; text-align:center; margin:5px}
+.sanpham img { 
+				width:auto; height:auto;/*để tự động co giãn đúng tỷ lệ ảnh gốc*/
+				max-width:160px; /*chiều ngang tối đa không quá 160px*/
+				max-height:200px;/*chiều cao tối đa không quá 200px*/
+				vertical-align:middle;
+				} 
+.sanpham p {color:#F90; text-align:center}
+.anhsanpham {
+				line-height:200px;
+				height:200px; 
+			}
+
